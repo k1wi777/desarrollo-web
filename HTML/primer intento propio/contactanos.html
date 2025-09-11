@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header style="background:#8a95b3; display:flex; align-items:center; padding:10px;">
+  <h1 style="margin:0;">formulario de solicitud de informacion</h1>
+  <a href="index.html" style="margin-left:auto; font-size:20px; font-weight:bold; text-decoration:none; color:#572653;">
+    volver al menu
+  </a>
+</header>
+<body>
+    <table border="1" style="width: 100%;">
+        <tr>
+            <td>
+                <h3>rellena los siguientes datos para poder contactar con nosotros</h3>
+                <form method="post" action="/">
+                <fieldset>
+                <legend>formulario para comunicacion</legend>
+                <fieldset>
+                    <legend>datos personales</legend>
+                    <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" 
+                       id="nombre" 
+                       name="nombre"
+                       placeholder="ingresa tu nombre"
+                       required>
+                    </div>
+                    <div>
+                    <label >correo:<input type="email" name="correo" placeholder="ingresa tu correo" required></label>
+                    </div>
+                    <div>
+                    <label >fecha:<input type="date" name="fecha" required></label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>otros</legend>
+                    <label for="why">porque deseas contactarnos? </label>
+                    <select name="why" id="why">
+                        <option value="1">sugerencias</option>
+                        <option value="2">trabajo</option>
+                        <option value="3">mas informacion</option>
+                    </select>
+                    <div>
+                        <label for="terminos">aceptas que tu informacion sea compartida a nosotros</label>
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                    </div>
+                    <div>
+                        <datalist id="lenguajesprogramacion">
+                            <option value="HTML"></option>
+                            <option value="PYTHON"></option>
+                            <option value="CSS"></option>
+                            <option value="JAVA"></option>
+                        </datalist>
+                        <label for="">
+                            a que lenguajes quieres enfatizar la sugerencia
+                            <input list="lenguajesprogramacion" name="lenguajesprogramacion">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="">cuentanos un poco mas sobre tu idea </label>
+                        <br>
+                        <textarea  cols="70" rows="7"" name="comentario" id="comentario" placeholder="cuentanos tus motivos..." ></textarea>
+                    </div>
+                    <div>
+                        <p>¿quieres trabajar con nosotros?<br>puedes subir tu curriculum si asi lo gustas</p>
+                        <label for="" >seleciona el archivo :<input type="file" id="archivo" name="archivo"></label> 
+                    </div>
+                </fieldset>
+                
+                </fieldset>
+                <button>enviar</button>
+            </form>
+            </td>
+            <td style="text-align:left; vertical-align:top;">
+                <h4>¿para que sirve contactarnos?</h4>
+                <p>si estas interesado en algun tipo de informacion
+                    mucho mas a fonod sobre alguno de los temas vistos
+                    a lo largo de la pagina puedes comunicarte personalmente
+                    con nosotros para conseguie un curso mucho mas completo
+                    sobre cualquier lenguaje de tu preferencia . tambien si te
+                    crees un programador muy bueno o especilaizado en alguno de 
+                    los lenguajes tratados en la pagina, puedes comunicarte con 
+                    nosotros para asi poder ofrecernos tus servicios y conocimientos
+                    ,si te consideramos un programador muy capaz podrias ser el 
+                    proximo integrante de nuestro grupo de desarroladores , buena suerte.
+                </p>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
